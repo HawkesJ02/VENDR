@@ -3,6 +3,7 @@ import { moneyService } from "../Services/SnacksService.js";
 import { setText } from "../Utils/Writer.js";
 
 
+
 function _draw_money(){
 let money = appState.money
 setText('money-total', `MONEY: ${money}$`)
@@ -14,6 +15,9 @@ export class MoneyController {
   console.log(appState.money);
   _draw_money()
  }
-
+ purchase_item(name){
+  console.log('you clicked',name);
+  _draw_money()
+  }
 
 }

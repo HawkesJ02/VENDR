@@ -5,6 +5,8 @@ class MoneyService{
     console.log('money is add :)');
     appState.money += 0.25;
   }
+
+
 }
 
 export const moneyService = new MoneyService()
